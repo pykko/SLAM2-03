@@ -1,59 +1,59 @@
-package fr.gns.admin ;
+package fr.awa.admin ;
 
 public class AppAdmin {
 
 	public static void main(String[] args) {
 		
-		Jeu [] lesJeux = {
-				new Jeu( 501 , "13 Jours" , 2 ) ,
-				new Jeu( 502 , "Cogit" , 8 , 15 ) ,
-				new Jeu( 503 , "Just One" , 4 ) ,
-				new Jeu( 504 , "Jarnac" , 2 , 22 ) ,
-				new Jeu( 505 , "Solitaire" , 1 , 3 )
+		Repas [] lesRepas = {
+				new Repas( 501 , "Oriental" , 2 ) ,
+				new Repas( 502 , "Asiatique" , 8 , true ) ,
+				new Repas( 503 , "Turc" , 4 , true ) ,
+				new Repas( 504 , "Oriental" , 2 ) ,
+				new Repas( 505 , "Oriental" , 4 , true )
 			} ;
 		
 		
 		System.out.println( "\n\n--------[ Question 4.3.4 ]--------\n" ) ;
-		visualiserJeux( lesJeux ) ;
+		visualiserRepas( lesRepas ) ;
 		
 		System.out.println( "\n\n--------[ Question 4.3.5 ]--------\n" ) ;
-		visualiserNomsJeux( lesJeux ) ;
+		visualiserSpecialiteRepas( lesRepas ) ;
 		
 		System.out.println( "\n\n--------[ Question 4.3.6 ]--------\n" ) ;
-		visualiserNomsJeuxMaj( lesJeux ) ;
+		visualiserSpecialiteRepasMaj( lesRepas ) ;
 		
 		System.out.println( "\n\n--------[ Question 4.3.7 ]--------\n" ) ;
-		int nbJeuxRecommandes = calculerNombreJeuxRecommandes( lesJeux ) ;
-		System.out.println( "Nombre de jeux recommandés : " + nbJeuxRecommandes ) ;
+		int nbRepasVegetariens = calculerNombreRepasVegetariens( lesRepas ) ;
+		System.out.println( "Nombre de repas végétariens : " + nbRepasVegetariens ) ;
 		
 		System.out.println( "\n\n--------[ Question 4.3.8 ]--------\n" ) ;
-		visualiserJeuLePlusRecommande( lesJeux ) ;
+		visualiserNbMaxCouverts( lesRepas ) ;
 		
 	}
 	
 	
-	private static void visualiserJeux( Jeu [] lesJeux ){
+	private static void visualiserRepas( Repas [] lesRepas ){
 		// Question 4.3.4 : Votre code ici
 	}
 	
 	
-	private static void visualiserNomsJeux( Jeu [] lesJeux ){
+	private static void visualiserSpecialiteRepas( Repas [] lesRepas ){
 		// Question 4.3.5 : Votre code ici
 	}
 	
-	private static void visualiserNomsJeuxMaj( Jeu [] lesJeux ){
+	private static void visualiserSpecialiteRepasMaj( Repas [] lesRepas ){
 		// Question 4.3.6 : Votre code ici
 	}
 	
-	private static int calculerNombreJeuxRecommandes( Jeu [] lesJeux ){
-		int nbJeux = 0 ;
+	private static int calculerNombreRepasVegetariens( Repas [] lesRepas ){
+		int nbRepasVegetariens = 0 ;
 		
 		// Question 4.3.7 : Votre code ici
 		
-		return nbJeux ;
+		return nbRepasVegetariens ;
 	}
 	
-	private static void visualiserJeuLePlusRecommande( Jeu [] lesJeux ){
+	private static void visualiserNbMaxCouverts( Repas [] lesRepas ){
 		// Question 4.3.8 : Votre code ici
 	}
 
